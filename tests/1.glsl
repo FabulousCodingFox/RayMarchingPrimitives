@@ -1,8 +1,7 @@
+#https://www.shadertoy.com/view/4fsGzH
+
 #define MAX_DISTANCE 100.
 #define SURFACE_DISTANCE .01
-
-
-
 
 ////////////////////////////////////////////////////
 struct Sphere{
@@ -59,23 +58,6 @@ float getDistance(vec3 position){
     float dPYRAMID = dPyramid(position, PYRAMID);
     return min(min(min(position.y, dSPHERE), dCUBE), dPYRAMID);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 struct Ray{
     vec3 origin, direction;
